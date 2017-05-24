@@ -18,5 +18,7 @@ puts ​'Pleased to meet you, '​ + name + ​'. :)'
 
 For examples that slowly modify, make sure you commit your work to Git so you can remember the change (as in the addition of the `String#chomp` method in this example from Chapter 6).
 
+Also, pick **three** exercises from “A Few Things to Try...” at the ends of the chapters (any three, from any chapter). You can put those in their own directory, if you’d like. Example solutions are at the end of the Pine book.
+
 Starting next week, we’ll use this repository differently for the rest of the semester’s reading, for the *Agile Rails* book. But don’t worry about that for now.
 
