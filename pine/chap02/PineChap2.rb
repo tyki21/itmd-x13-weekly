@@ -1,4 +1,5 @@
 #Chris Pine chapter 2
+#A few things to try
 puts "There are : "
 puts 24 * 7 * 4 * 12
 puts "hours in a year"

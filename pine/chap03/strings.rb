@@ -1,3 +1,4 @@
+#How string work
 puts 'Hello'
 puts " "
 puts 'Ruby Rocks.'
@@ -11,5 +12,9 @@ puts 'Althought I am ' + 'not very good'
 puts 'knit ' * 5
 
 puts 12 + 12
+puts '12' + '12'
+puts '12 + 12'
 
-    Contact GitHub API Training Shop Blog About
+puts 2 * 5
+puts '2' * 5
+puts '2 * 5'
