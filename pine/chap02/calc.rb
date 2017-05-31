@@ -1,4 +1,3 @@
-#Showing how floats work in Ruby
 puts 1+2
 puts 3
 puts 1.0 + 2.0

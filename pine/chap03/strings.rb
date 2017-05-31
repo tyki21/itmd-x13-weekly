@@ -11,3 +11,5 @@ puts 'Althought I am ' + 'not very good'
 puts 'knit ' * 5
 
 puts 12 + 12
+
+    Contact GitHub API Training Shop Blog About
