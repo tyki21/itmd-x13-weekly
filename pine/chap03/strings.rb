@@ -18,3 +18,10 @@ puts '12 + 12'
 puts 2 * 5
 puts '2' * 5
 puts '2 * 5'
+
+# this will not work
+puts 'You're swell!''
+
+#But this will
+puts 'You\re swell!'
+# the \ is the escape other characters
