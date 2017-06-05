@@ -1,14 +1,16 @@
 bottles = 99
 
-bottlesOfBeer = bottles.to_s
+bottlesOfJack = bottles
 
-while bottles > 0
+puts "Lets start singing!"
+while bottlesOfJack > 1
 
-    puts "Lets start singing!"
-    puts  bottlesOfBeer + " bottles of beer on the wall! " + bottlesOfBeer + " bottles of Beer!"
+    puts  bottlesOfJack.to_s + " bottles of Jack on the wall! " + bottlesOfJack.to_s + " bottles of Jack!"
 
-  if bottles > 0
-        bottlesOfBeer = (bottles.to_i - 1).to_s
-    puts "You take one down, pass it around " + bottlesOfBeer + " bottles of Beer on the wall!"
+    bottlesOfJack = bottlesOfJack - 1
+
+    puts "You take one down, pass it around " + bottlesOfJack.to_s + " bottles of Jack on the wall!"
 end
-end
+
+puts "1 bottle of Jack on the wall, 1 bottle of Jack!"
+puts "Take one down pass it around no more bottles of Jack! o.O"
