@@ -1,0 +1,441 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (111.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (247.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20170605172619)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "image_url" varchar, "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170605172619"]]
+  [1m[35m (117.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-05 17:48:33.914540"], ["updated_at", "2017-06-05 17:48:33.914540"]]
+  [1m[35m (92.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/products" for 127.0.0.1 at 2017-06-05 13:09:24 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-05 13:42:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-05 13:42:10 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-05 13:42:54 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-05 16:41:25 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-05 16:42:52 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-06-05 17:29:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 38ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-06-05 17:29:37 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/" for 127.0.0.1 at 2017-06-05 17:29:41 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-06 00:55:51 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 39ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-06 00:55:56 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/liffe/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-06-06 00:56:02 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products/nwe" for 127.0.0.1 at 2017-06-06 00:56:21 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products/new" for 127.0.0.1 at 2017-06-06 00:56:25 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price)
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products/new" for 127.0.0.1 at 2017-06-06 01:04:45 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price))
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-06 01:04:57 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price))
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-06 01:05:24 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+ams.require(:product).permit(: title, :description, :image_u
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+.permit(: title, :description, :image_url, :price))
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ':', expecting ')'
+app/controllers/products_controller.rb:72: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/products" for 127.0.0.1 at 2017-06-06 01:06:12 -0500
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/controllers/products_controller.rb:72: syntax error, unexpected ')', expecting keyword_end
+cription, :image_url, :price))
+                              ^):
+  
+app/controllers/products_controller.rb:72: syntax error, unexpected ')', expecting keyword_end
+Started GET "/products" for 127.0.0.1 at 2017-06-06 01:11:18 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (9.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 11.1ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected "}", was ""):
+    4:     <title>Depot</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/products.scss:55
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___775032809__1044071078'
+Started GET "/products" for 127.0.0.1 at 2017-06-06 13:18:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (17.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 18.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected "}", was ""):
+    4:     <title>Depot</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/products.scss:55
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__709265350__1056335238'
+Started GET "/products" for 127.0.0.1 at 2017-06-06 13:58:58 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1419ms (Views: 1417.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-06-06 13:59:09 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.7ms)
+  Rendered products/new.html.erb within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/views/products/_form.html.erb:15: syntax error, unexpected ':'
+t_buffer.append=( form.label : title );@output_buffer.safe_a
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/views/products/_form.html.erb:16: syntax error, unexpected ':'
+fer.append=( form.text_field : title, id: :product_ title );
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/views/products/_form.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+cription, rows:10, cols: 60 id: :product_description );@outp
+                              ^):
+  
+app/views/products/_form.html.erb:15: syntax error, unexpected ':'
+app/views/products/_form.html.erb:16: syntax error, unexpected ':'
+app/views/products/_form.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__838373001__641508988'
+Started GET "/products/new" for 127.0.0.1 at 2017-06-06 14:03:02 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (0.9ms)
+  Rendered products/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/views/products/_form.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+ld :title, id: :product_ title );@output_buffer.safe_append=
+                              ^
+/home/liffe/itmd-x13-weekly/depot/app/views/products/_form.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+cription, rows:10, cols: 60 id: :product_description );@outp
+                              ^):
+  
+app/views/products/_form.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/products/_form.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__838373001__644037148'
+Started GET "/products/new" for 127.0.0.1 at 2017-06-06 14:03:15 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (0.7ms)
+  Rendered products/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/liffe/itmd-x13-weekly/depot/app/views/products/_form.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+cription, rows:10, cols: 60 id: :product_description );@outp
+                              ^):
+  
+app/views/products/_form.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__838373001__633407918'
+Started GET "/products/new" for 127.0.0.1 at 2017-06-06 14:03:58 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (130.3ms) [cache miss]
+  Rendered products/new.html.erb within layouts/application (131.7ms)
+Completed 200 OK in 160ms (Views: 159.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-06-06 14:08:50 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GN7TNt95qw62ClOcnTycCXQmlvK1NMyqtTgOuiuaM7+6vyTDcA//+48+yeLgGuYTxl6/mEuNgCUNQvC+ELaV+w==", "product"=>{"title"=>"HandKnit Sweater", "description"=>"A sweater made with love and care", "image_url"=>"http://knit.com", "price"=>"25.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "HandKnit Sweater"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.4ms) [cache miss]
+  Rendered products/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 102ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-06-06 14:09:21 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R3hBtxV0TjX7bnH9wTxsAM9JLSLu3JX9LuvQbGZhliblGbZCugIawMJa64O8GhYafTEESBBl2XKWkS5oXU0wYg==", "product"=>{"title"=>"HandKnit Sweater", "description"=>"A sweater made with love and care", "image_url"=>"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjkuO7W9anUAhWFhlQKHdQxDzUQjRwIBw&url=http%3A%2F%2Fnewstitchaday.com%2Fdouble-knit-fabric-stitch%2F&psig=AFQjCNHZB2AUmskSMEH023XgWs9TZqCuBw&ust=1496862547450746", "price"=>"25.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "HandKnit Sweater"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.2ms) [cache miss]
+  Rendered products/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-06-06 14:09:23 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0RRC48EeJP1UUE5KwtHWLKyIL4YU6o2zI1jQUfL3hR5zdbUWbmhwCG1k1DS/96w2HvAG7OpTwTybIi5VydsjWg==", "product"=>{"title"=>"HandKnit Sweater", "description"=>"A sweater made with love and care", "image_url"=>"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjkuO7W9anUAhWFhlQKHdQxDzUQjRwIBw&url=http%3A%2F%2Fnewstitchaday.com%2Fdouble-knit-fabric-stitch%2F&psig=AFQjCNHZB2AUmskSMEH023XgWs9TZqCuBw&ust=1496862547450746", "price"=>"25.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "HandKnit Sweater"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.0ms) [cache miss]
+  Rendered products/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-06-06 14:09:26 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mpIb5Qn4ykDCdxOr6zjh8auKBWQKdJuBJR5I8tylOk848+wQpo6etftDidWWHpvrGfIsDvTN1w6dZLb254mcCw==", "product"=>{"title"=>"HandKnit Sweater", "description"=>"A sweater made with love and care", "image_url"=>"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjkuO7W9anUAhWFhlQKHdQxDzUQjRwIBw&url=http%3A%2F%2Fnewstitchaday.com%2Fdouble-knit-fabric-stitch%2F&psig=AFQjCNHZB2AUmskSMEH023XgWs9TZqCuBw&ust=1496862547450746", "price"=>"25.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "HandKnit Sweater"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.4ms) [cache miss]
+  Rendered products/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-06-06 14:10:07 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ETLkTYLoDwRzZkx2P3Wk1DhgJCWcSauFpx8kj2RpunizUxO4LZ5b8UpS1ghCU97OihgNT2Lw5wofZdqLX0UcPA==", "product"=>{"title"=>"HandKnit Sweater", "description"=>"A sweater made with love and care", "image_url"=>"love.jpg", "price"=>"25.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "HandKnit Sweater"], ["LIMIT", 1]]
+  [1m[35mSQL (21.0ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "HandKnit Sweater"], ["description", "A sweater made with love and care"], ["image_url", "love.jpg"], ["price", 25.0], ["created_at", "2017-06-06 19:10:07.075624"], ["updated_at", "2017-06-06 19:10:07.075624"]]
+  [1m[35m (158.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 188ms (ActiveRecord: 179.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-06 14:10:07 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-06-06 14:10:12 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "love.jpg" is not present in the asset pipeline.):
+    4: <% @products.each do |product| %>
+    5:     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    6:       <td>
+    7:         <%= image_tag(product.image_url, class: 'list_image') %>
+    8:         </td>
+    9:       <td class="list_description">
+   10:         <dl>
+  
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb__414976954__643078358'
+app/views/products/index.html.erb:4:in `_app_views_products_index_html_erb__414976954__643078358'
+Started GET "/products/1" for 127.0.0.1 at 2017-06-06 14:21:36 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-06-07 09:48:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (13.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (196.1ms)
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 15.7ms)
+
+
+  
+ActionView::Template::Error (The asset "love.jpg" is not present in the asset pipeline.):
+    4: <% @products.each do |product| %>
+    5:     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    6:       <td>
+    7:         <%= image_tag(product.image_url, class:'list_image') %>
+    8:         </td>
+    9:       <td class="list_description">
+   10:         <dl>
+  
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb__1052383610__1056524308'
+app/views/products/index.html.erb:4:in `_app_views_products_index_html_erb__1052383610__1056524308'
+Started GET "/products/new" for 127.0.0.1 at 2017-06-07 09:49:03 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (114.6ms) [cache miss]
+  Rendered products/new.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 335ms (Views: 324.4ms | ActiveRecord: 0.0ms)
+
+
