@@ -1,10 +1,15 @@
 puts 1 > 2
 puts 1 < 2
 
-puts 'Hello, what\'s your name?'
-name =  gets.chomp
-puts 'Hello, ' + name + '.'
+puts 5>=5
+puts 5<=4
 
-if name == 'Chris'
-    puts 'Well that\'s a plain name'
-end
+
+puts 1==1
+puts 2!=1
+
+
+puts 'cat' < 'dog'
+
+puts 'bug lady' < 'Xander'
+puts 'bug lady'.downcase < 'Xander'.downcase
