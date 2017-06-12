@@ -4,10 +4,10 @@ one:
    name: MyString
   image_url: MyString
   id: 1
-  address: MyString
+  email: MyString
 
 two:
    name: MyString
   image_url: MyString
   id: 1
-  address: MyString
+  email: MyString
