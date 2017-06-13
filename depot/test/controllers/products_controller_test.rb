@@ -5,8 +5,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     @product = products(:one)
     @update = {
       title:        'Lorem Ipsum',
-      description:  'Wibbles are fun'.
-      image_url:    'lorem.jpg'
+      description:  'Wibbles are fun',
+      image_url:    'lorem.jpg',
       price:        '19.95'
     }
   end
@@ -33,14 +33,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get product_url(@product)
     assert_response :success
   end
-
+  
   test "should get edit" do
     get edit_product_url(@product)
     assert_response :success
   end
 
   test "should update product" do
-    patch product_url(@product), params: { product: {@update}
+    patch product_url(@product), params: { product: @update}
     assert_redirected_to product_url(@product)
   end
 
