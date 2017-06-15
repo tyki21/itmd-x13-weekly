@@ -5,4 +5,6 @@ class Product < ApplicationRecord
     with: %r{\.(gif\jpg\png) \Z}i,
     message: 'Must be a URL for a GIF, JPG, or PNG image.'
   }
+
+  belongs_to :user
 end
