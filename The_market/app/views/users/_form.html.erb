@@ -1,3 +1,5 @@
+<div class = "user_form">
+
 <%= form_with(model: user, local: true) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
@@ -11,27 +13,31 @@
     </div>
   <% end %>
 
+<fieldset>
+<legend> Enter User Details
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :user_name %>
+    <%= form.label :name, 'Name'%>
+    <%= form.text_field :name, size: 60 %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :user_email %>
+    <%= form.label :email 'Email'%>
+    <%= form.text_field :email, size:110 %>
   </div>
 
   <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password, id: :user_password %>
+    <%= form.label :password, 'Password' %>
+    <%= form.password_field :password, size:40  %>
   </div>
 
   <div class="field">
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation, id: :user_password_confirmation %>
+    <%= form.label :password_confirmation, 'Confirm' %>
+    <%= form.password_field :password_confirmation, size:40 %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
+</fieldset>
 <% end %>
+</div>
