@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'admin/index'
+
   resources :carts
   root 'store#index', as: 'store_index'
   resources :products
