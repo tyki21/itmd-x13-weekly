@@ -51,6 +51,15 @@ bad = %w{ fred.doc fred.gif/more fred.gif.more }
     assert new_product(name).invalid?, "#{name} shouldn't be valid"
   end
 end
+
+test "product is not valid without a unique title - il8n" do
+  product = Product.new (title:       products(:ruby).title,
+                         description: "yyy",
+                         price:       1,
+                         image_url:   "fred.gif")
+  assert product.invalid?
+  assert_equal [I18n.translate('errors.messages.take')], 
+                products.errors[:title]
 #assert true
 #end
 end
