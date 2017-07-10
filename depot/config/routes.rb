@@ -7,7 +7,6 @@ Rails.application.routes.draw do
 
   get 'sessions/destroy'
 
-  resources :carts
   root 'store#index', as: 'store_index'
 
   resources :products
